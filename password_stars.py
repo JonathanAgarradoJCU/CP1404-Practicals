@@ -5,6 +5,7 @@ The program should then print asterisks as long as the word.
 Example: if the user enters Pythonista (10 characters), the program should print **********.
 """
 
+
 PASSWORD_LENGTH = 8  # minimum length of typical password
 
 user_password = input("Input password: ")
