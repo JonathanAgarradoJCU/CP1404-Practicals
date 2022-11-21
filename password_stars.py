@@ -12,7 +12,7 @@ def main():
     password = get_password()  # ask user for input
     while validate_password(password):  # validate input
         password = get_password()
-    print_stars(password)  # print stars
+    display_stars(password)  # convert input into stars
 
 
 def get_password():
@@ -26,7 +26,7 @@ def validate_password(password):
         return True
 
 
-def print_stars(password):
+def display_stars(password):
     for i in range(1, len(password) + 1, 1):
         print("*", end='')
 
