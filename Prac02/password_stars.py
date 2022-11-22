@@ -2,10 +2,10 @@ PASSWORD_LENGTH = 8  # minimum length of typical password
 
 
 def main():
-    password = get_password()  # ask user for input
-    while validate_password(password):  # validate input
+    password = get_password()  # asks user for input
+    while validate_password(password) is False:  # validates input
         password = get_password()
-    display_stars(password)  # convert input into stars
+    display_stars(password)  # converts input into stars
 
 
 def get_password():
@@ -16,7 +16,7 @@ def get_password():
 def validate_password(password):
     if len(password) < PASSWORD_LENGTH:
         print(f"Minimum password length is 8 characters! You only typed in {len(password)} character(s).")
-        return True
+        return False
 
 
 def display_stars(password):
