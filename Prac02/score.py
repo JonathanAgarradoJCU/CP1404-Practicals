@@ -1,8 +1,3 @@
-"""
-Name: Jonathan Roi Ferrer Agarrado (14275360)
-CP1404/CP5632 - Practical 02
-"""
-
 import random
 
 
