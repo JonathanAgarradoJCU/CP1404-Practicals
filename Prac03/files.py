@@ -24,5 +24,3 @@ for i in range(0, len(number)):
     total_number += int(number[i])
 in_file.close()
 print(total_number)
-
-
