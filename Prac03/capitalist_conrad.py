@@ -30,7 +30,7 @@ while MIN_PRICE <= price <= MAX_PRICE:
     if random.randint(1, 2) == 1:
         # generate a random floating-point number
         # between 0 and MAX_INCREASE
-        price_change = random.unifor(0, MAX_INCREASE)
+        price_change = random.uniform(0, MAX_INCREASE)
     else:
         # generate a random floating-point number
         # between negative MAX_DECREASE and 0
