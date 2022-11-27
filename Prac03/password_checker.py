@@ -57,10 +57,10 @@ def is_valid_password(password):
             if char in SPECIAL_CHARACTERS:
                 count_special += 1
         if count_special < 1:
-            return True
+            return False
 
     # if we get here (without returning False), then the password must be valid
-    return False
+    return True
 
 
 main()
