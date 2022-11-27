@@ -18,7 +18,7 @@ try:
     fraction = numerator / denominator
     print(fraction)
 except ValueError:
-    print("Numreator and denominator must be valid numbers!")
+    print("Numerator and denominator must be valid numbers!")
 except ZeroDivisionError:
     print("Cannot divide by zero!")
 print("Finished.")
