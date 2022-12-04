@@ -13,7 +13,6 @@ print(f"The smallest number is {min(numbers)}")
 print(f"The largest number is {max(numbers)}")
 print(f"The average of the number is {sum(numbers)/len(numbers)}")
 
-
 username = input("Username: ")
 if username in usernames:
     print("Access granted")
