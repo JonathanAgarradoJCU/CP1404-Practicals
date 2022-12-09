@@ -15,9 +15,11 @@ def main():
         name = process_email(email)
     display_emails()
 
+
 def display_emails():
     for email in EMAILS:
         print(f"{EMAILS[email]} ({email})")
+
 
 def process_email(email):
     names = email.split("@")
@@ -28,6 +30,7 @@ def process_email(email):
     else:
         name = names[0].title()
         return name
+
 
 def validate_email():
     email = input("Email: ")
