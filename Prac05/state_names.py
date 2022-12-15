@@ -4,10 +4,12 @@ State names in a dictionary
 File needs reformatting
 """
 
+
 lengths = []
 CODE_TO_NAME = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Territory", "WA": "Western Australia",
                 "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
 print(CODE_TO_NAME)
+
 
 state_code = input("Enter short state: ").upper()
 while state_code != "":
@@ -17,10 +19,12 @@ while state_code != "":
         print(state_code, "is", CODE_TO_NAME[state_code])
     state_code = input("Enter short state: ").upper()
 
+
 for keys in CODE_TO_NAME.keys():
     length = len(keys)
     lengths.append(length)
     width = max(lengths)
+
 
 for state_code in CODE_TO_NAME:
     print(f"{state_code: <{width}} is {CODE_TO_NAME[state_code]}")
