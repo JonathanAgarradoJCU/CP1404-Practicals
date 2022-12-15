@@ -41,4 +41,5 @@ def validate_email():
         email = input("Email: ")
     return email
 
+
 main()
