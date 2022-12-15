@@ -3,7 +3,6 @@ COUNTRIES = {}
 champions = []
 countries = []
 
-
 def main():
     with open("wimbledon.csv", "r", encoding="utf-8-sig") as in_file:
         data = in_file.readlines()
@@ -16,7 +15,6 @@ def main():
         sorted_countries = sort_list(COUNTRIES)
         print(f"These {len(sorted_countries)} countries have won the Wimbledon:")
         print(", ".join(sorted_countries))
-
 
 def sort_list(dictionary):
     list_current = dictionary.keys()
